@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Zeeshan Chatur</title>
+    <link>http://www.example.com/posts/</link>
+    <description>Recent content in Posts on Zeeshan Chatur</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podcast Episodes</title>
+      <link>http://www.example.com/posts/podcastep/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/podcastep/</guid>
+      <description> Here is a list of some of my favorite Podcast Episodes (in no particular order): Link to heading #1. reCAPTCHA and Duolingo: Luis von Ahn Link to heading #2. Lord of the Rankings Link to heading </description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>http://www.example.com/posts/books/</link>
+      <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/books/</guid>
+      <description>Here are some of my favorite books I have read (mostly listend to): Link to heading 1. Outliers by Malcolm Gladwell Link to heading Outliers by Malcolm Gladwell is a really interesting book that shows how success isn&amp;rsquo;t just about being really talented or working really hard - it&amp;rsquo;s also about having the right opportunities and circumstances.
+2. The Creative Act: A Way of Being by Rick Rubin Link to heading The Creative Act by Rick Rubin is an inspiring essay that offers valuable insights into the creative process, emphasizing the importance of authenticity, collaboration, and experimentation in unlocking one&amp;rsquo;s creative potential.</description>
+    </item>
+    
+  </channel>
+</rss>
