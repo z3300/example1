@@ -6,7 +6,16 @@
     <description>Recent content on Zeeshan Chatur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creator Companion</title>
+      <link>http://www.example.com/posts/creatorai/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/creatorai/</guid>
+      <description>Try it out here. Link to heading Code for this project. Link to heading Introduction: Link to heading Podcasts offer a wealth of information and entertainment, but navigating through extensive libraries of episodes to find specific content can be challenging. That&amp;rsquo;s where the Creator Companion app comes in. Designed as a search engine for &amp;ldquo;The Colin and Samir Show&amp;rdquo; podcast, the app uses advanced language models and vector search technology to help users locate and retrieve relevant segments from the podcast.</description>
+    </item>
+    
     <item>
       <title>Podcast Episodes</title>
       <link>http://www.example.com/posts/podcastep/</link>
@@ -54,6 +63,15 @@
     </item>
     
     <item>
+      <title>One Byte: Pizza Review Analysis</title>
+      <link>http://www.example.com/posts/onebyte/</link>
+      <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/onebyte/</guid>
+      <description>One Byte: Pizza Review Analysis Link to heading Here is the Code for this project. Link to heading Welcome to One Byte, a data analysis project that analyzes the data from Dave Portnoy&amp;rsquo;s One Bite Pizza series. The One Bite Pizza reviews started in 2014 and have really gained popularity since 2016, with a new review being uploaded almost daily since then. As a fan of pizza, I have always been searching for the perfect slice.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>http://www.example.com/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
@@ -78,7 +96,16 @@ I am passionate about data analytics, machine learning and AI. I am always on th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.example.com/projects/</guid>
-      <description>One Byte: Pizza Review Analysis Link to heading Welcome to One Byte, a data analysis project that analyzes the data from Dave Portnoy&amp;rsquo;s One Bite Pizza series. The One Bite Pizza reviews started in 2014 and have really gained popularity since 2016, with a new review being uploaded almost daily since then. As a fan of pizza, I have always been searching for the perfect slice. That&amp;rsquo;s why I have analyzed over 1300 pizza locations reviewed by Dave Portnoy in his One Bite Pizza series to bring you the ultimate guide to finding the best pizza.</description>
+      <description> Here are some of the projects I have worked on: Link to heading Creator Companion One Byte: Pizza Review Analysis FishType </description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>http://www.example.com/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/resume/</guid>
+      <description></description>
     </item>
     
   </channel>

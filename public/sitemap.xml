@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.example.com/posts/podcastep/</loc>
-    <lastmod>2023-01-24T00:00:00+00:00</lastmod>
+    <loc>http://www.example.com/posts/creatorai/</loc>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/posts/</loc>
-    <lastmod>2023-01-24T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/</loc>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.example.com/posts/podcastep/</loc>
     <lastmod>2023-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/posts/books/</loc>
@@ -35,12 +38,17 @@
     <loc>http://www.example.com/tags/</loc>
     <lastmod>2023-01-04T11:51:36+01:00</lastmod>
   </url><url>
+    <loc>http://www.example.com/posts/onebyte/</loc>
+    <lastmod>2022-10-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.example.com/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/contact/</loc>
   </url><url>
     <loc>http://www.example.com/projects/</loc>
+  </url><url>
+    <loc>http://www.example.com/resume/</loc>
   </url><url>
     <loc>http://www.example.com/series/</loc>
   </url>
