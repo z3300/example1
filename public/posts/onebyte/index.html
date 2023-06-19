@@ -164,7 +164,7 @@
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              11-minute read
+              14-minute read
             </span>
           </div>
           
@@ -353,6 +353,28 @@
 <p>However, the relationship between views and Dave&rsquo;s scoring isn&rsquo;t straightforward. It isn&rsquo;t the high-rated pizzas that necessarily rack up the most views, but rather the entertainment value of the review itself. The series is not only about the pizzas but also about the unique and often hilarious interactions and events that occur during the reviews. These memorable moments, like unexpected encounters with passersby or Dave&rsquo;s candid reactions, add a viral dimension to the reviews. For instance, the most viewed video in the series is not a review of a gourmet, high-end pizza place, but a review of Chuck E. Cheese&rsquo;s pizza, which has garnered over 3.5 million views.</p>
 <p><img src="/likes.png" alt="likes.png"></p>
 <p>Yet, it&rsquo;s worth noting that when Dave gives a high score, it can trigger an avalanche of attention for the reviewed establishment. Numerous articles and anecdotes highlight instances when Dave awarded a pizza joint an 8 or 9, causing the restaurant to explode in popularity virtually overnight. In one memorable <a href="'https://www.detroitnews.com/story/entertainment/dining/2021/02/12/melvindales-fredi-pizzaman-overwhelmed-after-barstool-review/6726039002/'">case</a>, a restaurant that received a score of 8.6 experienced such a surge in customers that lines stretched out the door. The sudden increase in popularity even necessitated the hiring of additional employees to keep up with the demand.</p>
+<h2 id="transcripts-and-sentiment-analysis">
+  Transcripts and Sentiment Analysis
+  <a class="heading-link" href="#transcripts-and-sentiment-analysis">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>To get a deeper understanding of the content of the reviews, I decided to perform sentiment analysis on the transcripts of the videos. Using the same Youtube API, I was able to extract the transcripts of each video. This was a long process due to the rate limits Youtube has on their API. I was able to extract the transcripts of about 1,000 videos, which is a majority of the reviews listed on the One Bite channel publicly.</p>
+<p><img src="/common_words.png" alt="commonwords"></p>
+<p>This word cloud provides a snapshot of the most common words in Portnoy&rsquo;s reviews. The word &ldquo;pizza,&rdquo; the subject of every review, dominates the image, reflecting the central theme of his reviews. His signature catchphrase, &ldquo;One Bite everybody knows the rules,&rdquo; also features prominently, underscoring its recurring role in his review process. Other noticeable terms include &ldquo;right&rdquo; and &ldquo;Frankie,&rdquo; a reference to Dave&rsquo;s cameraman who was behind the scenes in most of the reviews. The recurring phrase &ldquo;alright Frankie&rdquo; at the start of most reviews is hence captured. Notably, the word &ldquo;good&rdquo; stands out, reflecting Dave&rsquo;s generally positive assessment of the pizzas he samples.</p>
+<p>For sentiment analysis of each transcript, I employed TextBlob, a Python library for processing textual data. It provides a simple API for a host of common Natural Language Processing (NLP) tasks, including sentiment analysis. Sentiment scores in TextBlob are computed on a scale ranging from -1 to 1, where -1 represents a negative sentiment, 1 represents a positive sentiment, and 0 represents a neutral sentiment.</p>
+<p><img src="/distribution.png" alt="distribution"></p>
+<p>The plot illustrates that a significant number of reviews score around 0.2, signaling a neutral undertone in the majority of Dave&rsquo;s videos. This observation aligns with Dave&rsquo;s overall lighthearted and humorous reviewing style, which often carries a positive note.</p>
+<p>With the distribution leaning slightly towards the positive side, the mean sentiment score comes out to be 0.34, and the median sentiment score rests at 0.23. The scarcity of negatively scored reviews could either signify a limitation of TextBlob&rsquo;s sentiment analysis or mirror Dave&rsquo;s generally optimistic stance across most reviews.</p>
+<p><img src="/postive.png" alt="postive"></p>
+<p>In further exploration, I further examined the distribution by segmenting the reviews with the top 10 highest sentiment scores. The review scoring the highest on the sentiment scale was the one for Rosie&rsquo;s Pizzeria, which scored a .7. Remarkably, this review was one where Dave gave the pizza an 8.5, a notably high score by his standards.</p>
+<p>Looking at the wordcloud for the top-scoring videos, a lot of the words from the previous graph appear here. The dominating word &lsquo;good&rsquo; is reflective of the favorable sentiment scores. Other positive terms such as &lsquo;best,&rsquo; &lsquo;great,&rsquo; &lsquo;pretty good,&rsquo; and &rsquo;love&rsquo; are also prominently displayed. Their significant presence underlines the upbeat and positive language that helped push these particular reviews to the top of the sentiment scores.</p>
+<p><img src="/goodgood.png" alt="goodgood"></p>
+<p>Analyzing the data on the lower end of the sentiment scale presents intriguing insights. The review for Secret Pizza had the lowest sentiment score of -.24. This corresponded with a low rating of 3.4 assigned by Dave, indicating an interesting relationship between sentiment scores and Dave&rsquo;s own ratings. Following closely was The Grotto, with a sentiment score of -.21 and a respective Dave&rsquo;s score of 3.3. This pattern reaffirms the connection between the sentiment scores and Dave&rsquo;s ratings, especially apparent when considering lower-rated reviews.</p>
+<p><img src="/negative.png" alt="negative"></p>
+<p>Examining the Wordcloud of the lowest-scoring videos reveals a stark contrast to the positive language found in the top-scoring ones. Though some commonly used words persist, new and notably negative terms appear more frequently in this set. Words such as &lsquo;cold,&rsquo; &lsquo;bad,&rsquo; &lsquo;hate,&rsquo; &rsquo;never,&rsquo; and &rsquo;little&rsquo; emerge as dominant in this landscape of language. These words, mostly carrying a negative connotation, play a significant role in driving the sentiment scores down in these particular reviews.</p>
+<p><img src="/bad.png" alt="bad"></p>
 <h1 id="rankings">
   Rankings
   <a class="heading-link" href="#rankings">
@@ -360,7 +382,7 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>Finally, I wanted to explore the top-rated pizza restaurants in Dave&rsquo;s review portfolio as well as on the One Bite App. I calculated a weighted average of the average One Bite score given by the users as well as incorperating the number of reviews a restaurant has received on the One Bite App. This gives a more comprehensive and democratic view of the best pizza slices, as it factors in the voice of the masses along with the quantity of the reviews, which adds credibility to the scores. Using this method, I created a list of the top 10 highest-rated restaurants for both and included the worst-rated restaurants as well.</p>
+<p>Finally, I wanted to explore the top-rated pizza restaurants in Dave&rsquo;s review portfolio as well as on the One Bite App. I calculated a weighted average of the average One Bite score given by the users as well as incorporated the number of reviews a restaurant has received on the One Bite App. This gives a more comprehensive and democratic view of the best pizza slices, as it factors in the voice of the masses along with the quantity of the reviews, which adds credibility to the scores. Using this method, I created a list of the top 10 highest-rated restaurants for both and included the worst-rated restaurants as well.</p>
 <h3 id="lowest-scored-pizzas">
   Lowest Scored Pizzas
   <a class="heading-link" href="#lowest-scored-pizzas">
